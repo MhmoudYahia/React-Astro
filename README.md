@@ -19,14 +19,18 @@ Inside of your Astro project, you'll see the following folders and files:
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│   └── images
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── Nav.jsx
+|       └── Footer.jsx
+|       └── Product.jsx
+|       └── Products.jsx
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
 │       └── index.astro
+|       └── products.astro
 └── package.json
 ```
 
