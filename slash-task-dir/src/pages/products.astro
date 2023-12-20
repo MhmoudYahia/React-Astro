@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ProductsPage } from '../components/ProductsList';
+
+const response = await fetch('https://slash-backend.onrender.com/product');
+const { data, message, statusCode } = await response.json();
+---
+
+<Layout title="Products">
+  <h1 class="text-yellow-400 text-2xl font-bold text-center my-10">Products</h1>
+  <hr />
+
+  <ProductsPage products={data} message={message} statusCode={statusCode} />
+</Layout>
